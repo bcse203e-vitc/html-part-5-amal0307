@@ -1,0 +1,94 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Timeline container */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 600px;
+}
+
+/* Vertical timeline line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #ccc;
+    transform: translateX(-50%);
+}
+
+/* Each event */
+.event {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 20px;
+    width: 50%;
+}
+
+/* Alternating left/right alignment */
+.event:nth-child(odd) {
+    left: 50%;
+    text-align: left;
+    padding-left: 30px;
+}
+.event:nth-child(even) {
+    left: 0;
+    text-align: right;
+    padding-right: 30px;
+}
+
+/* Event content styling */
+.event-content {
+    position: relative;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.event:nth-child(odd) .event-content {
+    border-color: #4caf50;
+}
+.event:nth-child(even) .event-content {
+    border-color: #2196f3;
+}
+
+/* Timeline dots */
+.event::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: 4px solid #ccc;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.event:nth-child(odd)::before {
+    background: #4caf50;
+    border-color: #4caf50;
+}
+.event:nth-child(even)::before {
+    background: #2196f3;
+    border-color: #2196f3;
+}

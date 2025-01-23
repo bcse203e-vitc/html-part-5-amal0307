@@ -1,0 +1,52 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 50px;
+    background-color: wheat;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    
+}
+a{
+    padding: 40px;
+    text-decoration:none;
+    color:brown;
+}
+#section1{
+    height: 100vh;
+    width: 100%;
+    background-color: beige;
+
+}
+#section2{
+    height: 100vh;
+    width: 100%;
+    background-color:aquamarine;
+}
+#section3{
+    margin-top: 0;
+    height:100vh;
+    width:100%;
+    background-color: blanchedalmond;
+}
+#section4{
+    margin: 0;
+    height: 100vh;
+    width:100%;
+    background-color:burlywood;
+}
+nav a:target {
+    background-color: #ff7e5f;
+    color: white;
+    border-radius: 5px;
+  }

@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box
+}
+header{
+    height: 100px;
+    background:linear-gradient(45deg,red,black);
+    text-align: center;
+  
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+a{
+    padding: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
+    mix-blend-mode: overlay;
+    
+}
+

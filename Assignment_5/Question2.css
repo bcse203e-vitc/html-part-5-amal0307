@@ -1,0 +1,54 @@
+div{
+    border-width: 0.01m;
+    border-style: solid;
+    border-color: black;
+    background-color: white
+    
+    
+}
+body{
+    background-color:white;
+ 
+    display: flex;
+        justify-content: center;
+        /* Centers horizontally */
+        align-items: center;
+        /* Centers vertically */
+        height: 100vh;
+        /* Full viewport height */
+        margin: 0;
+        /* Remove default body margin */
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    gap:500px;
+    border: none
+ 
+}
+.c1:hover{
+    background-color: green;
+    transform: scale(1.1);
+}
+.c2:hover{
+    background-color: green;
+    transform: scale(1.1);
+    }
+
+.c3.hover{
+    background-color: green;
+    transform: scale(1.1);
+    
+}
+.c1{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 10%;
+}
+.c2{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 10%;
+}
+.c3{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 10%;
+}

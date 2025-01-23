@@ -1,0 +1,72 @@
+/* General reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Pricing table container */
+  .pricing-table {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Pricing plan card styling */
+  .pricing-plan {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .pricing-plan h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-plan .price {
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-plan p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Highlight the most popular plan */
+  .pricing-plan.popular {
+    background-color: #ffdf00; /* Distinct background for popular plan */
+    border: 2px solid #ffbb00;
+  }
+  
+  /* Button styling */
+  .buy-button {
+    background-color: #007bff;
+    color: white;
+    padding:  15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    background-color: #0056b3;
+  }
+  
